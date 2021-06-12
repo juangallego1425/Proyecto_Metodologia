@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Tienda Pepe</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="usuarios.html">Usuarios y Productos</a></li>
+        <li><a href="contabilidad.html">Contabilidad</a></li>
+        <li><a href="compras.html">Compras</a></li>
+        <li><a href="productos.html">Productos vendidos</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="login.html">Login</a></li>
+
+    </ul>
+
+
+
+    <nav>
+        <div class="nav-wrapper">
+
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="file:///C:/Users/jjdiazg/Desktop/progra%20IV/ProyectoAsignatura/home.html" class="brand-logo" style="padding-left: 30px">Super Tienda Pepe</a>
+            <ul class="right hide-on-med-and-down">
+
+                <li><a href="usuarios.html">Usuarios y Productos</a></li>
+                <li><a href="contabilidad.html">Contabilidad</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="productos.html">Productos vendidos</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="login.html">Login</a></li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="usuarios.html">Usuarios y Productos</a></li>
+        <li><a href="contabilidad.html">Contabilidad</a></li>
+        <li><a href="compras.html">Compras</a></li>
+        <li><a href="productos.html">Productos vendidos</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="login.html">Login</a></li>
+
+
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var options = "";
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var options = "";
+            var instances = M.Sidenav.init(elems, options);
+
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var options = "";
+            var instances = M.Dropdown.init(elems, options);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elemsMobile = document.querySelectorAll('.dropdown-trigger-mobile');
+            var optionsMobile = "";
+            var instancesMobile = M.Dropdown.init(elemsMobile, optionsMobile);
+        });
+
+    </script>
+    <style>
+        .activator {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+
+        body {
+            display: flex;
+            position: relative;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+
+
+
+</head>
+
+<body>
+
+</body>
+
+
+</html>

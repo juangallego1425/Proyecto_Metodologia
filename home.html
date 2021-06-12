@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Super Tienda Pepe</title>
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+
+
+
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/css/materialize.min.css">
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+
+    <ul id="dropdown1" class="dropdown-content">
+        <li><a href="usuarios.html">Usuarios y Productos</a></li>
+        <li><a href="contabilidad.html">Contabilidad</a></li>
+        <li><a href="compras.html">Compras</a></li>
+        <li><a href="productos.html">Productos vendidos</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="login.html">Login</a></li>
+
+    </ul>
+
+
+
+    <nav>
+        <div class="nav-wrapper">
+
+            <a href="#" data-target="mobile-demo" class="sidenav-trigger"><i class="material-icons">menu</i></a>
+            <a href="file:///C:/Users/jjdiazg/Desktop/progra%20IV/ProyectoAsignatura/home.html" class="brand-logo" style="padding-left: 30px">Super Tienda Pepe</a>
+            <ul class="right hide-on-med-and-down">
+
+                <li><a href="usuarios.html">Usuarios y Productos</a></li>
+                <li><a href="contabilidad.html">Contabilidad</a></li>
+                <li><a href="compras.html">Compras</a></li>
+                <li><a href="productos.html">Productos vendidos</a></li>
+                <li><a href="clientes.html">Clientes</a></li>
+                <li><a href="login.html">Login</a></li>
+
+
+
+            </ul>
+        </div>
+    </nav>
+    <ul class="sidenav" id="mobile-demo">
+        <li><a href="usuarios.html">Usuarios y Productos</a></li>
+        <li><a href="contabilidad.html">Contabilidad</a></li>
+        <li><a href="compras.html">Compras</a></li>
+        <li><a href="productos.html">Productos vendidos</a></li>
+        <li><a href="clientes.html">Clientes</a></li>
+        <li><a href="login.html">Login</a></li>
+
+
+    </ul>
+
+    <script>
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var options = "";
+            var instances = M.Sidenav.init(elems, options);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.sidenav');
+            var options = "";
+            var instances = M.Sidenav.init(elems, options);
+
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.dropdown-trigger');
+            var options = "";
+            var instances = M.Dropdown.init(elems, options);
+        });
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elemsMobile = document.querySelectorAll('.dropdown-trigger-mobile');
+            var optionsMobile = "";
+            var instancesMobile = M.Dropdown.init(elemsMobile, optionsMobile);
+        });
+
+    </script>
+    <style>
+        .activator {
+            width: 100%;
+            height: 15vw;
+            object-fit: cover;
+        }
+
+        body {
+            display: flex;
+            position: relative;
+            min-height: 100vh;
+            flex-direction: column;
+        }
+
+        main {
+            flex: 1 0 auto;
+        }
+    </style>
+    <script>
+
+        document.addEventListener('DOMContentLoaded', function () {
+            var elems = document.querySelectorAll('.parallax');
+            var options = "";
+            var instances = M.Parallax.init(elems, options);
+        });
+    </script>
+
+
+</head>
+
+<body>
+
+
+    <div class="parallax-container">
+        <div class="parallax"><img src="imagenes/tienda-de-barrio1.jpg"></div>
+    </div>
+    <div class="section white">
+        <div class="row container">
+            <h2 class="header">Las Mangas</h2>
+            <p class="grey-text text-darken-3 lighten-3">Se requiere el desarrollo de una aplicación que permita
+                gestionar información correspondiente a una tienda de barrio. El sistema debe ser implementado en los
+                lenguajes PHP, HTML, CSS Y JAVASCRIPT teniendo en cuenta las entidades y procesos que se describen a
+                continuación.
+                El sistema cuenta con clientes de los cuales se guarda información tal como cédula, nombre, apellidos,
+                e-mail, número celular y dirección. Debe permitir la inserción, búsqueda, actualización y borrado de
+                clientes (Create-Read-Update-Delete). Cuando se crea un nuevo cliente, se debe generar automáticamente
+                un usuario y contraseña que son enviados al correo del cliente para que pueda ingresar a la tienda y
+                realizar las compras. Es necesario que un cliente tenga usuario y contraseña para que pueda ingresar a
+                la tienda.
+                Cada vez que un cliente ingrese a la tienda, debe poder ver el listado de productos y seleccionar los
+                productos y cantidades que desea comprar. Cuando el cliente haya terminado de seleccionar los productos
+                y cantidades, podrá oprimir un botón que permitirá descontar los productos del inventario y le llegará
+                un correo electrónico con los productos seleccionados y confirmando la compra realizada. No se puede
+                permitir realizar una compra con productos que no existan o con cantidades que sean menores a las que se
+                tienen en el inventario. Se debe guardar registro de las compras realizadas.
+                También existe información correspondiente a los productos de la tienda, de los cuales se debe
+                administrar (mediante CRUD), nombre, tipo de producto y cantidad.
+                Se debe contar con un usuario y contraseña de administrador para poder realizar los cambios en los
+                clientes y en los productos de la tienda. El administrador podrá ver el listado de los clientes, el
+                listado de productos en el inventario y las compras realizadas (para cada una se debe incluir el nombre
+                del cliente que hizo la compra).</p>
+        </div>
+    </div>
+    <div class="parallax-container">
+        <div class="parallax"><img src="imagenes/tienda2.jpg"></div>
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/1.0.0/js/materialize.min.js"></script>
+
+</body>
+
+
+</html>
