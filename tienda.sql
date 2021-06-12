@@ -26,7 +26,7 @@ SET time_zone = "+00:00";
 -- Estructura de tabla para la tabla `administrador`
 --
 
-CREATE TABLE IF NOT EXISTS `administrador` (
+/*CREATE TABLE IF NOT EXISTS `administrador` (
   `Cedula` varchar(20) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
   `Nombres` varchar(30) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
   `Apellidos` varchar(30) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
@@ -55,7 +55,7 @@ INSERT INTO `administrador` (`Cedula`, `Nombres`, `Apellidos`, `Email`, `Usuario
 
 
 
-CREATE TABLE IF NOT EXISTS `cliente` (
+/*CREATE TABLE IF NOT EXISTS `cliente` (
   `Cedula` varchar(20) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
   `Nombres` varchar(30) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
   `Apellidos` varchar(30) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
@@ -82,7 +82,7 @@ INSERT INTO `cliente` (`Cedula`, `Nombres`, `Apellidos`, `Email`, `Usuario`, `Co
 
 
 
-CREATE TABLE IF NOT EXISTS `producto` (
+/*CREATE TABLE IF NOT EXISTS `producto` (
   `Codigo_Producto` varchar(20) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
   `Nombres` varchar(30) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
   `Tipo_Producto` varchar(100) CHARACTER SET latin1 COLLATE latin1_spanish_ci NOT NULL,
@@ -99,6 +99,25 @@ CREATE TABLE IF NOT EXISTS `producto` (
 INSERT INTO `producto` (`Codigo_Producto`, `Nombres`, `Tipo_Producto`, `Cantidad`, `Valor`) VALUES
 ('7800', 'Arroz', 'grano', '10', '1.500');
 
+
+/*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
+/*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
+/*!40101 SET COLLATION_CONNECTION=@OLD_COLLATION_CONNECTION */;
+
+CREATE TABLE IF NOT EXISTS `usuario` (
+  `id` int(11) NOT NULL AUTO_INCREMENT,
+  `username` varchar(50) NOT NULL,
+  `password` varchar(255) NOT NULL,
+   PRIMARY KEY (`id`),
+  UNIQUE KEY `username` (`username`)
+) ENGINE=InnoDB DEFAULT CHARSET=latin1 AUTO_INCREMENT=1 ;
+
+--
+--Volcado de datos para la tabla `usuario`
+--
+
+INSERT INTO `producto` (`id`, `username`, `password`) VALUES
+('7967', 'admin', 'admin');
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
